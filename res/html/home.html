@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SimpleChat - Home</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: url('https://images.unsplash.com/photo-1518609878373-06d740f60d8b?auto=format&fit=crop&w=1950&q=80') no-repeat center center fixed;
+            background-size: cover;
+            color: #ffffff;
+            font-size: 18px;
+        }
+
+        .MainContent {
+            max-width: 950px;
+            margin: 60px auto;
+            padding: 40px;
+            background: rgba(0, 0, 0, 0.65);
+            border-radius: 16px;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 4px 20px rgba(0,0,0,0.4);
+            position: relative;
+        }
+
+        h2 {
+            font-size: 32px;
+            margin-top: 30px;
+            color: #00e6e6;
+        }
+
+        ul {
+            padding-left: 24px;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        .HomeHeaderSvg {
+            position: absolute;
+            top: -40px;
+            right: -40px;
+            width: 180px;
+            opacity: 0.08;
+        }
+
+        .AppDescription {
+            line-height: 1.8;
+        }
+
+        code {
+            background: rgba(255, 255, 255, 0.15);
+            padding: 4px 8px;
+            border-radius: 6px;
+            color: #fff176;
+        }
+
+        a {
+            color: #66ffcc;
+            text-decoration: underline;
+        }
+
+        a:hover {
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+<% #header.html %>
+<div class="MainContent SimpleFont">
+    <img src="chat.svg" class="HomeHeaderSvg" alt="Chat Logo"/>
+    <h2>Welcome to SimpleChat</h2>
+    <div class="AppDescription">
+        <p><strong>SimpleChat</strong> is a modern, real-time web chat application built using <strong>Spring Boot</strong>. It demonstrates full-stack functionality with real-world tech like authentication, file handling, WebSockets, and responsive UI.</p>
+        
+        <h2>Key Features</h2>
+        <ul>
+            <li><strong>User Authentication:</strong>
+                <ul>
+                    <li>Session-based login</li>
+                    <li>“Remember me” with cookies</li>
+                    <li>Basic HTTP authentication</li>
+                </ul>
+            </li>
+            <li>Secure self-signed HTTPS</li>
+            <li>Real-time WebSocket messaging</li>
+            <li>Upload and download file support</li>
+            <li>Data persistence with JPA (Hibernate)</li>
+            <li>Smart login redirection</li>
+            <li>File caching using modification dates</li>
+            <li>Idle session expiration after 1 hour</li>
+            <li>In-memory session storage for speed</li>
+        </ul>
+
+        <h2>User Interface Highlights</h2>
+        <ul>
+            <li>Fully responsive design</li>
+            <li>Interactive modals</li>
+            <li>Toast notifications</li>
+            <li>Real-time WebSocket updates</li>
+            <li>AJAX/HTTP Request usage</li>
+        </ul>
+
+        <h2>How to Use</h2>
+        <ul>
+            <li>Build: <code>mvn package</code></li>
+            <li>Run: <code>java -jar target/simplechat-0.0.1-SNAPSHOT.jar</code></li>
+            <li>Open: <a href="https://localhost:62600/">https://localhost:62600/</a></li>
+            <li>Sign up at least two user accounts</li>
+            <li>Start chatting!</li>
+        </ul>
+
+        <h2>What You Can Do</h2>
+        <ul>
+            <li>Send real-time text messages</li>
+            <li>Upload files to chat</li>
+            <li>Click file-messages to download</li>
+        </ul>
+
+        <!-- Optional About section
+        <h2>About</h2>
+        <div>Made with 💙 by Masoud Taghavian</div>
+        <div>Contact: masoud.taghavian@gmail.com</div>
+        -->
+    </div>
+</div>
+</body>
+</html>
